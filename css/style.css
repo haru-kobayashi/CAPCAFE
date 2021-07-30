@@ -163,7 +163,7 @@ header{
         text-align: center;
     }
     .foreword-text h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .foreword-text p{
         width: 100%;
@@ -187,11 +187,26 @@ header{
         width: 80%;
         font-size: 15px;
     }
+    .foreword-img{
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* point */
 .point{
   width: 100%;
+}
+.point-smh{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+  .point-nomal{
+      display: none;
+  }
+  .point-smh{
+      display: inline;
+  }
 }
 
 /* lineup */
@@ -249,17 +264,20 @@ header{
     width: 25%;
 }
     .menu-box h3{
-    font-size: 25px;
+    font-size: 20px;
 }
-.menu-box p{
-    font-size: 15px;
+    .menu-box p{
+    font-size: 13px;
 }
-.menu{
+    .menu{
     margin-top: 30px;
 }
-.menu-contents img{
+    .menu-contents img{
     width: 90%;
 }
+    .menu-contents p{
+        font-size: 10px;
+    }
    }
 
 /* rental */
@@ -332,32 +350,40 @@ header{
     
 }
 @media screen and (max-width: 480px) {
-    /* .rentalspace-main{
-        height: 60vh;
+    .rentalspace-main{
+
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .rentalspace-sub{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: -200px;
+        margin-top: -250px;
+        width: 80%;
     }
-    .rentalspace-sub img{
-        width: 38%;
-    } */
     .rental-contents{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: -2rem;
     }
     .rental-contents__left{
-        width: 60%;
+        width: 75%;
         padding-top: 5rem;
     }
     .rental-contents__right{
         margin-top: 2rem;
         width: 80%;
     }
+    .rental-contents__right img{
+        width: 80%;
+    }
     .rental-text{
         width: 100%;
+    }
+    .rental-text h3{
+        font-size: 15px;
+    }
+    .rental-text p{
+        font-size: 10px;
     }
    }
 
@@ -412,10 +438,10 @@ header{
         margin-top: 3rem;
     }
     .access-text h3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .access-text p{
-        font-size: 15px;
+        font-size: 10px;
     }
 }
 
@@ -426,11 +452,20 @@ footer{
     height: 210px;
     width: 100vw;
 }
-.footer-item{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 2rem;
+
+#back-top a{
+    position: fixed;
+    right:20px;
+    bottom:10px;
+    transition: 1s;
+    width: 80px;
+    height: 80px;
 }
+ #back-top a:hover{ 
+    opacity: 0.75;
+}
+
+
 
 @media screen and (max-width: 768px) {
     footer{
@@ -446,5 +481,9 @@ footer{
     }
     .footer-item{
         padding-top: 1rem;
+    }
+    #back-top a{
+        width: 50px;
+        height: 50px;
     }
 }

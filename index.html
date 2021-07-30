@@ -10,10 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Cafe CAPE</title>
   </head>
-  <body>
+  <body id="top">
     <header>
       <div class="mv">
         <div class="sub-mv"><img src="images/mv-sub.png" alt="sub-mv"></div>
@@ -30,7 +30,7 @@
       <img src="images/top-cap-img4.png" alt="トップイメージ４">
       <img src="images/top-cap-img5.png" alt="トップイメージ５">
     </section>
-    <section class="foreword scroll-fade">
+    <section class="foreword scroll-fade-row">
       <div class="foreword-back">
         <img src="images/foreword-back.png" alt="バックグラウンド">
       </div>
@@ -50,15 +50,16 @@
         </div>
       </div>
     </section>
-    <section class="point scroll-fade">
-      <img src="images/point.png" alt="ポイント">
+    <section class="point scroll-fade-row">
+      <img class="point-nomal" src="images/point.png" alt="ポイント">
+      <img class="point-smh" src="images/point-smh.png" alt="ポイントスマホ">
     </section>
     <section class="lineup">
       <div class="container">
         <div class="lineup-img">
           <img src="images/lineup.png" alt="ラインナップ">
         </div>
-        <div class="capcake scroll-fade">
+        <div class="capcake scroll-fade-row">
           <div class="menu-box">
             <h3>CAP CAKE</h3>
             <p>当店のおすすめ、日替わりカップケーキをお召し上がりくださいませ</p>
@@ -91,7 +92,7 @@
               </div>
           </div>
         </div>
-        <div class="drinkmenu  scroll-fade">
+        <div class="drinkmenu  scroll-fade-row">
             <div class="menu-box">
               <h3>CAP CAKE</h3>
               <p>当店のおすすめ、日替わりカップケーキをお召し上がりくださいませ</p>
@@ -126,7 +127,7 @@
         </div>
       </div>    
     </section>
-    <section class="rentalspace">
+    <section class="rentalspace scroll-fade-row">
       <div class="rentalspace-main"></div>
       <div class="rentalspace-sub">
         <img src="images/rentalspace-sub.png" alt="レンタル詳細">
@@ -165,8 +166,7 @@
     <footer>
       <div class="container">
         <div class="footer-item">
-          <img src="images/top.png" alt="topへ">
-          <img src="images/footer-arrow.png" alt="矢印">
+          <p id="back-top"><a href="#top"><img src="images/to top.png" alt="topへ"></a></p>
         </div>
       </div>
     </footer>
